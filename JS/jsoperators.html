@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arithmetic, Assignment, Comparison, and Logical operators</title>
+  </head>
+  <body>
+    <h1>Arithmetic, Assignment, Comparison, and Logical operators</h1>
+    <script>
+      /*
+        Arithmetic Operators
+        Used for basic math.
+      */
+      let a = 10;
+      let b = 3;
+
+      console.log(a + b); // 13
+      console.log(a - b); // 7
+      console.log(a * b); // 30
+      console.log(a / b); // 3.333...
+      console.log(a % b); // 1
+      console.log(a ** b); // 1000 (10 to the power of 3)
+
+      /*
+        Assignment Operators
+        Used to assign values to variables.
+      */
+      let x = 5;
+
+      x += 2; // x = x + 2
+      console.log("As Opt 1 line", x); // 7
+
+      x *= 3; // x = x * 3
+      console.log("As Opt 2 line",x); // 21
+
+      x -= 5; // x = x - 5
+      console.log("As Opt 3 line",x); // 16
+
+      x /= 2; // x = x / 2
+      console.log(x); // 8
+
+      /*
+        Comparison Operators
+        Used to compare values.
+      */
+      let m = 10;
+      let n = "10";
+
+      console.log(m == n); // true (loose equality)
+      console.log(m === n); // false (strict equality)
+      console.log(m != n); // false
+      console.log(m !== n); // true
+      console.log(m > 5); // true
+      console.log(m <= 10); // true
+
+      /*
+        Logical Operators
+        Used to combine conditions.
+        */
+      let isLoggedIn = true;
+      let isAdmin = false;
+
+      console.log(isLoggedIn && isAdmin); // false
+      console.log(isLoggedIn || isAdmin); // true
+      console.log(!isLoggedIn); // false
+    </script>
+  </body>
+</html>

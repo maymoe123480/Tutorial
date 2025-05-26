@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Types Examples</title>
+  </head>
+  <body>
+    <h1>
+      Javascript Data Types: String, Number, Boolean, Undefined, Null, Object ,
+      Array Example
+    </h1>
+    <script>
+      /*
+        String
+        Represents a sequence of characters (text).
+      */
+      let name = "Alice";
+      let greeting = "Hello, world!";
+
+      /*
+        Number
+        Represents both integers and floating-point numbers.
+      */
+      let age = 30;
+      let price = 19.99;
+
+      /*
+        Boolean
+        Represents a logical value: true or false.
+      */
+      let isLoggedIn = true;
+      let isAdmin = false;
+
+      /*
+        Undefined
+        A variable that has been declared but not assigned a value.
+      */
+      let score;
+      console.log(score); // undefined
+      /*
+        Null
+    Represents the intentional absence of any object value.
+      */
+      let selectedUser = null;
+
+      /*
+        Object
+       Used to store collections of data and more complex entities.
+      */
+      let user = {
+        name: "Alice",
+        age: 25,
+        isMember: true,
+      };
+
+      /*Type Checking
+      You can check the type using typeof:
+      */
+      console.log(typeof name); // "string"
+      console.log(typeof age); // "number"
+      console.log(typeof isLoggedIn); // "boolean"
+      console.log(typeof score); // "undefined"
+      console.log(typeof selectedUser); // "object" (this is a known quirk in JavaScript)
+      console.log(typeof user); // "object"
+
+      /*
+        Array
+        An Array is a type of object that holds an ordered collection of values
+      */
+      // An array of numbers
+      let numbers = [1, 2, 3, 4, 5];
+
+      // An array of strings
+      let fruits = ["apple", "banana", "cherry"];
+
+      // An array of mixed data types
+      let mixed = [42, "hello", true, null, undefined, { name: "Alice" }];
+
+      // An array with another array (nested array)
+      let matrix = [
+        [1, 2],
+        [3, 4],
+      ];
+
+      //Accessing Array Elements
+      console.log(fruits[0]); // "apple"
+      console.log(mixed[5].name); // "Alice"
+      // Common Array Methods
+      fruits.push("orange"); // Adds "orange" at the end
+      fruits.pop(); // Removes last element
+      fruits.unshift("grape"); // Adds "grape" at the beginning
+      fruits.shift(); // Removes first element
+
+      console.log(fruits.length); // Number of items in the array
+      //Check Array Type
+      console.log(Array.isArray(fruits)); // true
+      console.log(typeof fruits); // "object"
+    </script>
+  </body>
+</html>

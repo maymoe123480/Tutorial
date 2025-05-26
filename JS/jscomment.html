@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascript Comment Examples</title>
+  </head>
+  <body>
+    <h1>Javascript Comment Examples</h1>
+    <h2>Use comments to describe complex logic or business rules.</h2>
+    <h2>Keep comments concise and meaningful.</h2>
+
+    <script>
+      // This is a single-line comment
+      let name = "Alice"; // Declaring a variable
+
+      /* 
+        This is a multi-line comment.
+        It can span across several lines.
+      */
+      let age = 25;
+
+      // BAD
+      let count = 0; // Set count to zero
+
+      // GOOD
+      // let count = 0; // Used to track user click count
+
+      /**
+       * Calculates the total price with tax.
+       * @param {number} price - The base price.
+       * @param {number} taxRate - The tax rate (e.g., 0.1 for 10%).
+       * @returns {number} - The final price after tax.
+       */
+      function calculatePrice(price, taxRate) {
+        return price + price * taxRate;
+      }
+    </script>
+  </body>
+</html>
