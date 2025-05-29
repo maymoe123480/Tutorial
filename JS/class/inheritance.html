@@ -16,11 +16,18 @@ class Sportcar extends Car{
     constructor(brand, year, maxSpeed){
         super(brand,year);
         this.maxSpeed=maxSpeed;
+        
 
     }
+    getInfo(){
+                return `Brand: ${this.brand}, Year: ${this.year}, MAXSPEED:${this.maxSpeed}`;
+
+            }
     
 }
 const sportcar=new Sportcar("Toyota", 2018, 1000);
+ 
+console.log(sportcar.getInfo());
     </script>
   </body>
   </html>
