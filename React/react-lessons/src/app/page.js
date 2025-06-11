@@ -8,7 +8,7 @@
 // import Exercise3 from "../exercises/Exercise3";
 // import Exercise4 from "../exercises/Exercise4";
 
-// import Example5 from "../components/Example5";
+import Example10 from "../components/Example10";
 // import Example6 from "../components/Example6";
 // import Example8 from "../components/Example8";
 // import Example9 from "../components/Example9";
@@ -24,7 +24,7 @@
 // import Example17 from "../components/Example17";
 // import Example18 from "../components/Example18";
 // import Example19 from "../components/Example19";
-import Example24 from "../components/Example24";
+//import Example24 from "../components/Example24";
 
 
 export default function Home() {
@@ -57,10 +57,7 @@ export default function Home() {
         <Example17 status="error"/>
         <Example18 isLoggedIn={true}/>
         <Example19 name="may"/> */}
-        <Example24 />
-
-
-
+        <Example10 />
 
 
     </div>
