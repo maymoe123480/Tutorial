@@ -1,7 +1,6 @@
 "use client";
 
 // import BasicForm from "@/component/BasicForm/BasicForm";
-// import FormExercise from "@/component/BasicForm/FormExercise/FormExercise";
 import ContactForm from "@/component/ContactForm/ContactForm";
 // import NavLayout from "@/component/NavLayout/NavLayout";
 // import { Box, Typography } from "@mui/material";

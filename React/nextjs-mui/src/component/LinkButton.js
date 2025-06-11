@@ -1,12 +1,12 @@
 import { Button } from '@mui/material'
 import Link from 'next/link'
-import React, { Children } from 'react'
+import React, { children } from 'react'
 
-export default function LinkButton({href, Children}) {
+export default function LinkButton({href, children}) {
   return (
     <div>
       <Link href={href} passHref>
-      <Button variant="outlined">{Children}</Button></Link>
+      <Button variant="contained">{children}</Button></Link>
     </div>
   );
 }

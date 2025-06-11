@@ -7,15 +7,15 @@ export default function Setting() {
   return (
     <div>
       <Typography variant="h4">Setting Page</Typography>
-      <Link href="/profile" passHref>
+      {/* <Link href="/profile" passHref>
         <Button variant="contained">Go to Profile</Button>
       </Link>
-      {/* <Link href="/" passHref>
+      <Link href="/" passHref>
         <Button variant="contained">Go to Home</Button>
-      </Link>
+      </Link> */}
       <LinkButton href="/profile">
         Go to Profile by LinkButton Component
-      </LinkButton> */}
+      </LinkButton>
     </div>
   );
 }
