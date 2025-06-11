@@ -15,7 +15,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import {useForm, Controller}from "react-hook-form";
 import { schema } from "./validationschema";
 const CT=[
-    {value:"ayeyarwady", label:"ayeyarwady"},
+    {value:"Bahan", label:"Bahan"},
     {value:"pathein", label:"pathein"},
     {value:"maubin", label:"maubin"},
     {value:"hpa-an", label:"hpa-an"},
