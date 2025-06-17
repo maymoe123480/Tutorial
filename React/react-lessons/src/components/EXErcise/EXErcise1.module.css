@@ -1,0 +1,87 @@
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.inputRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.taskInput {
+  height: 40px;
+  padding: 5px 10px;
+  width: 250px;
+  margin-right: 10px;
+  border-radius: 8px;
+  border: none;
+  color: rgb(0, 0, 0);
+
+}
+
+.addTaskBtn {
+  padding: 10px 15px;
+  background-color: #ae1ff5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.taskItem {
+  background-color: #d4d3d3;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskText {
+  flex: 1;
+  color: rgb(7, 7, 7);
+}
+
+.editBtn {
+  margin-left: 10px;
+  padding: 8px 12px;
+  background-color: #982dd6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.saveBtn {
+  margin-left: 10px;
+  padding: 8px 12px;
+  background-color: #ad69f4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.deleteBtn {
+  margin-left: 10px;
+  padding: 8px 12px;
+  background-color: #ff3f5b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}

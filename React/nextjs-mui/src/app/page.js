@@ -1,7 +1,8 @@
 "use client";
 
-// import BasicForm from "@/component/BasicForm/BasicForm";
 import ContactForm from "@/component/ContactForm/ContactForm";
+// import BasicForm from "@/component/BasicForm/BasicForm";
+//import ToDoList from "@/component/ToDoList/ToDoList";
 // import NavLayout from "@/component/NavLayout/NavLayout";
 // import { Box, Typography } from "@mui/material";
 
@@ -31,7 +32,9 @@ export default function Home() {
         </Box>
       </NavLayout> */}
       {/* <BasicForm/> */}
-      <ContactForm/>
+    <ContactForm/>
+      {/* <ToDoList/> */}
+
     </div>
   );
 }

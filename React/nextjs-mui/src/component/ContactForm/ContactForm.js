@@ -1,31 +1,31 @@
 "use client";
 import {
-  Box,
-  TextField,
-  Select,
-  MenuItem,
-  FormControl,
-  InputLabel,
-  Button,
-  FormHelperText,
+    Box,
+    TextField,
+    Select,
+    MenuItem,
+    FormControl,
+    InputLabel,
+    Button,
+    FormHelperText,
 } from "@mui/material";
 import React from 'react'
 
 import { yupResolver } from "@hookform/resolvers/yup";
-import {useForm, Controller}from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import { schema } from "./validationschema";
-const CT=[
-    {value:"Bahan", label:"Bahan"},
-    {value:"pathein", label:"pathein"},
-    {value:"maubin", label:"maubin"},
-    {value:"hpa-an", label:"hpa-an"},
+const CT = [
+    { value: "Bahan", label: "Bahan" },
+    { value: "pathein", label: "pathein" },
+    { value: "maubin", label: "maubin" },
+    { value: "hpa-an", label: "hpa-an" },
 ];
 
-const TS=[
-    {value:"wakhema", label:"wakhema"},
-    {value:"pathein", label:"pathein"},
-    {value:"maubin", label:"maubin"},
-    
+const TS = [
+    { value: "wakhema", label: "wakhema" },
+    { value: "pathein", label: "pathein" },
+    { value: "maubin", label: "maubin" },
+
 ];
 
 
@@ -37,25 +37,23 @@ export default function ContactForm() {
         reset,
         control,
         formState: { errors },
-      } = useForm({
+    } = useForm({
         resolver: yupResolver(schema),
-        defaultValues:{
-            city:"", township:"",
+        defaultValues: {
+            city: "", township: "",
         },
-      });
+    });
 
-      
-    
-     const onSubmit = (formData) => {
-    console.log("formData", formData);
-     console.log("Name Input Data", formData.name);
-     reset();
-      };
+    const onSubmit = (formData) => {
+        console.log("formData", formData);
+        console.log("Name Input Data", formData.name);
+        reset();
+    };
 
     return (
         <div>
             <Box component="form" sx={{ p: 2 }} onSubmit={handleSubmit(onSubmit)}>
-               
+
                 <TextField
                     label="Name"
                     fullWidth
@@ -91,7 +89,6 @@ export default function ContactForm() {
                     error={!!errors.address}
                     helperText={errors.address?.message}
                 />
-
 
 
                 <FormControl fullWidth sx={{ mb: 2 }} error={!!errors.city}>
@@ -147,7 +144,7 @@ export default function ContactForm() {
                     <FormHelperText>{errors.township?.message}</FormHelperText>
                 </FormControl>
                 <Button variant="contained" type="save">SAVE</Button>
-    </Box>
+            </Box>
 
 
         </div>
